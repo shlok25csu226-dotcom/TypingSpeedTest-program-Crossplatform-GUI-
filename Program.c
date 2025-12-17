@@ -30,7 +30,7 @@ char *sprintTexts[] = {
     "yes now try get see use",
     "all new big old red hot"};
 
-// Game states
+// Program states
 int currentState = 0; // 0=MODE_SELECT, 1=TESTING, 2=RESULTS
 int selectedMode = 0; // 1=Code, 2=Standard, 3=Sprint
 char *currentText = NULL;
@@ -76,7 +76,7 @@ float calculateAccuracy(char *original, char *typed)
     return ((float)correct / total) * 100.0f;
 }
 
-void loadRandomText()
+void Text()
 {
     int index = rand() % 5;
     if (selectedMode == 1)
@@ -93,7 +93,7 @@ void loadRandomText()
     }
 }
 
-void startTest()
+void Pre_Test()
 {
     testActive = 1;
     startTime = time(NULL);
@@ -102,7 +102,7 @@ void startTest()
     currentState = 1;
 }
 
-void finishTest()
+void Post_Test()
 {
     testActive = 0;
     time_t endTime = time(NULL);

@@ -99,6 +99,10 @@
 			[
 				{
 					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-IC:/vcpkg/installed/x64-windows/debug/../include"
 				}
 			],
 			"includes" : 
