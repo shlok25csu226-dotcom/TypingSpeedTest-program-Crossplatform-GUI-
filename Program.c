@@ -1,6 +1,7 @@
 #include "raylib.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 #include <string.h>
 #include <time.h>
 
@@ -30,7 +31,7 @@ char *sprintTexts[] = {
     "yes now try get see use",
     "all new big old red hot"};
 
-// Program states
+// Program state
 int currentState = 0; // 0=MODE_SELECT, 1=TESTING, 2=RESULTS
 int selectedMode = 0; // 1=Code, 2=Standard, 3=Sprint
 char *currentText = NULL;
@@ -123,7 +124,7 @@ int main(void)
     srand(time(NULL));
 
     // Colors (plain Windows style)
-    Color bgColor = (Color){240, 240, 240, 255};     // Light gray background
+    Color bgColor = (Color){240, 240, 240, 255};     // Light gry background
     Color windowColor = (Color){255, 255, 255, 255}; // White window
     Color borderColor = (Color){180, 180, 180, 255}; // Gray border
     Color textColor = (Color){0, 0, 0, 255};         // Black text
